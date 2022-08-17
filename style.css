@@ -27,7 +27,7 @@ a:hover{
   margin-left: calc(var(--bs-gutter-x)*-.5);
   margin-right: calc(var(--bs-gutter-x)*-.5);
   margin-top: calc(var(--bs-gutter-y)*-1);
-  
+
 }
 
 .row-project{
@@ -319,7 +319,6 @@ marquee{
 .fact{
   font-family: 'SpaceMono Regular';
   font-size: 14px;
-  text-decoration: underline 3px;
 }
 
 #info img{
