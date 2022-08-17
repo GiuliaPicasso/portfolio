@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'FivoSansModern Regular', sans-serif;
+  font-family: 'FivoSansModern Regular';
   cursor: url('images/bullet.svg'), auto;
 }
 
@@ -43,14 +43,14 @@ a:hover{
 @font-face {
   font-family: 'FivoSansModern Medium';
   src: url('font/FivoSansModern-Medium.otf') format('woff2');
-  font-style: Medium;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'FivoSansModern Bold';
   src: url('font/FivoSansModern-Bold.otf') format('woff2');
-  font-style: Bold;
+  font-style: normal;
   font-display: swap;
 }
 
