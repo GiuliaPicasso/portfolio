@@ -307,3 +307,23 @@ marquee{
 #info img{
   width: 60vw;
 }
+
+
+/*---------------mobile--------------*/
+
+@media screen and (max-width:767px) {
+
+  .navbar-brand{
+    font-family: 'Poppins SemiBold';
+    font-size: 26px;
+  }
+
+  .col-6{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+}
