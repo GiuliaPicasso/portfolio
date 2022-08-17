@@ -1,0 +1,309 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Fivo Sans Modern Regular', sans-serif;
+  cursor: url('images/bullet.svg'), auto;
+}
+
+a{
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover{
+  color: black;
+  text-decoration: underline;
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x)*-.5);
+  margin-right: calc(var(--bs-gutter-x)*-.5);
+  margin-top: calc(var(--bs-gutter-y)*-1);
+}
+
+
+/*---------------font-section--------------*/
+
+
+@font-face {
+  font-family: 'Fivo Sans Modern Regular';
+  src: url('FivoSansModern-Regular.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Medium';
+  src: url('font/FivoSansModern-Medium.otf') format('woff2');
+  font-style: Medium;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Bold';
+  src: url('font/FivoSansModern-Bold.otf') format('woff2');
+  font-style: Bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fivo Sans Modern Heavy';
+  src: url('font/FivoSansModern-Heavy.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Poppins SemiBold';
+  src: url('font/Poppins-SemiBold.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SpaceMono Regular';
+  src: url('font/SpaceMono-Regular.otf') format('woff2');
+  font-style: normal;
+  font-display: swap;
+}
+
+/*---------------scroller-section--------------*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+  outline: 1px solid black;
+  background-size: 40px;
+  border-radius: 10px;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+}
+
+
+::-webkit-scrollbar-button {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+
+/*---------------navbar--------------*/
+
+#nav{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  overflow: hidden;
+  outline: 1px solid black;
+}
+
+.navbar{
+  background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nav-bar{
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand{
+  font-family: Poppins SemiBold;
+  font-size: 300%;
+}
+
+.aboutme{
+  clear: both;
+  display: inline-block;
+  justify-content: center;
+}
+
+.asterisco{
+  width: 5vw;
+  text-align: right;
+  cursor: pointer;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.asterisco:hover{
+  transform: rotate(180deg);
+}
+
+/*---------------banner--------------*/
+
+#banner {
+  background-color: white;
+  padding: 50px 25px 50px 25px;
+  justify-content: center;
+  outline: 1px solid black;
+}
+
+
+.claim{
+  font-size: 32px;
+}
+
+
+/*---------------project--------------*/
+
+#projects {
+  background-color: white;
+  padding: 50px 25px 50px 25px;
+  justify-content: center;
+}
+
+.project{
+  position: relative;
+  height: 90%;
+  width: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.project-image{
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  cursor: pointer;
+}
+
+.project:hover .overlay{
+  opacity: 1;
+}
+
+.project:hover .project-image{
+  filter: none;
+}
+
+.project-text{
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+/*---------------footer--------------*/
+
+#footer{
+  background-color: white;
+  padding: 15px 25px 0px 25px;
+  outline: 1px solid black;
+  font-size: 18px;
+}
+
+.footer{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-link{
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+/*---------------aboutme--------------*/
+
+#aboutme{
+  background-color: white;
+  padding: 50px 25px 50px 25px;
+  outline: 1px solid black;
+}
+
+.bio{
+  font-size: 28px;
+  font-family: Fivo Sans Modern Regular;
+}
+
+
+#cv{
+  background-color: white;
+  padding: 25px 25px 0px 25px;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+
+/*---------------profile--------------*/
+
+#cover{
+  background-size: 100vw;
+  padding: 50px 0px 50px 0px;
+  background: white;
+}
+
+marquee{
+  font-family: SpaceMono Regular;
+  font-size: 16px;
+}
+
+#info{
+  padding: 50px 0px 50px 0px;
+  background: #ffffff;
+}
+
+.specs{
+  font-size: 18px;
+}
+
+.sub{
+  font-family: Fivo Sans Modern Medium;
+  font-size: 20px;
+}
+
+.fact{
+  font-family: SpaceMono Regular;
+  font-size: 14px;
+}
+
+#info img{
+  width: 60vw;
+}
