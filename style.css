@@ -1,7 +1,7 @@
 *{
   margin: 0;
   padding: 0;
-  font-family: 'FivoSansModern Regular';
+  font-family: 'Fivo Sans Modern Regular';
   cursor: url('images/bullet.svg'), auto;
 }
 
@@ -34,28 +34,28 @@ a:hover{
 
 
 @font-face {
-  font-family: 'FivoSansModern Regular';
+  font-family: 'Fivo Sans Modern Regular';
   src: url('FivoSansModern-Regular.otf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FivoSansModern Medium';
+  font-family: 'Fivo Sans Modern Medium';
   src: url('font/FivoSansModern-Medium.otf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FivoSansModern Bold';
+  font-family: 'Fivo Sans Modern Bold';
   src: url('font/FivoSansModern-Bold.otf') format('woff2');
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'FivoSansModern Heavy';
+  font-family: 'Fivo Sans Modern Heavy';
   src: url('font/FivoSansModern-Heavy.otf') format('woff2');
   font-style: normal;
   font-display: swap;
@@ -253,7 +253,7 @@ a:hover{
 
 .bio{
   font-size: 28px;
-  font-family: 'FivoSansModern Regular', sans-serif;
+  font-family: 'Fivo Sans Modern Regular';
 }
 
 
