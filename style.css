@@ -43,14 +43,14 @@ a:hover{
 @font-face {
   font-family: 'Fivo Sans Modern Medium';
   src: url('font/FivoSansModern-Medium.otf') format('woff2');
-  font-style: medium;
+  font-style: normal;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Fivo Sans Modern Bold';
   src: url('font/FivoSansModern-Bold.otf') format('woff2');
-  font-style: bold;
+  font-style: normal;
   font-display: swap;
 }
 
@@ -295,7 +295,7 @@ marquee{
 }
 
 .sub{
-  font-family: 'Fivo Sans Modern Medium';
+  font-family: 'Fivo Sans Modern Regular';
   font-size: 20px;
 }
 
