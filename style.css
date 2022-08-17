@@ -322,7 +322,13 @@ marquee{
 }
 
 #info img{
-  width: 60vw;
+  width: 80vw;
+}
+
+
+
+.carousel-item{
+  height: 100vh;
 }
 
 
