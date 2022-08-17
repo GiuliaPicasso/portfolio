@@ -16,7 +16,7 @@ a:hover{
   text-decoration: underline;
 }
 
-.row{
+.row {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,22 @@ a:hover{
   margin-top: calc(var(--bs-gutter-y)*-1);
 }
 
+.row-project{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  --bs-gutter-x: 30px;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(var(--bs-gutter-x)*-.5);
+  margin-right: calc(var(--bs-gutter-x)*-.5);
+  margin-top: calc(var(--bs-gutter-y)*-1);
+}
+
+.container{
+  padding: 10px;
+}
 
 /*---------------font-section--------------*/
 
@@ -233,7 +249,7 @@ a:hover{
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: self-start;
 }
 
 .footer-link{
@@ -338,6 +354,12 @@ marquee{
 
   #footer{
     font-size: 14px;
+  }
+
+  .row-project{
+    flex-direction:column;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
 
