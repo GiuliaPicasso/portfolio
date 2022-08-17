@@ -302,6 +302,7 @@ marquee{
 .fact{
   font-family: 'SpaceMono Regular';
   font-size: 14px;
+  text-decoration: underline 3px;
 }
 
 #info img{
@@ -315,15 +316,17 @@ marquee{
 
   .navbar-brand{
     font-family: 'Poppins SemiBold';
-    font-size: 26px;
+    font-size: 30px;
   }
 
-  .col-6{
-    width: 100%;
-    align-items: center;
-    text-align: center;
+  .claim{
+    font-size: 24px;
   }
 
+  .sub{
+    font-family: 'Fivo Sans Modern Regular';
+    font-size: 16px;
+  }
 
 
 }
