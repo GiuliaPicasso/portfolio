@@ -41,21 +41,21 @@ a:hover{
 }
 
 @font-face {
-  font-family: 'Fivo Sans Modern Medium';
+  font-family: 'FivoSansModern Medium';
   src: url('font/FivoSansModern-Medium.otf') format('woff2');
   font-style: Medium;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Fivo Sans Modern Bold';
+  font-family: 'FivoSansModern Bold';
   src: url('font/FivoSansModern-Bold.otf') format('woff2');
   font-style: Bold;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Fivo Sans Modern Heavy';
+  font-family: 'FivoSansModern Heavy';
   src: url('font/FivoSansModern-Heavy.otf') format('woff2');
   font-style: normal;
   font-display: swap;
@@ -136,7 +136,7 @@ a:hover{
 }
 
 .navbar-brand{
-  font-family: Poppins SemiBold;
+  font-family: 'Poppins SemiBold';
   font-size: 300%;
 }
 
@@ -253,7 +253,7 @@ a:hover{
 
 .bio{
   font-size: 28px;
-  font-family: Fivo Sans Modern Regular;
+  font-family: 'FivoSansModern Regular', sans-serif;
 }
 
 
@@ -281,7 +281,7 @@ li{
 }
 
 marquee{
-  font-family: SpaceMono Regular;
+  font-family: 'SpaceMono Regular';
   font-size: 16px;
 }
 
@@ -295,12 +295,12 @@ marquee{
 }
 
 .sub{
-  font-family: Fivo Sans Modern Medium;
+  font-family: 'FivoSansModern Medium';
   font-size: 20px;
 }
 
 .fact{
-  font-family: SpaceMono Regular;
+  font-family: 'SpaceMono Regular';
   font-size: 14px;
 }
 
