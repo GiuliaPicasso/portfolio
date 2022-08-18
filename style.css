@@ -325,11 +325,17 @@ marquee{
   width: 80vw;
 }
 
-
-
-.carousel-item{
-  height: 100vh;
+#myCarousel{
+ width: 100%;
 }
+
+.foto{
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+
 
 
 /*---------------mobile--------------*/
