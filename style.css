@@ -120,14 +120,6 @@ a:hover{
 }
 
 
-::-webkit-scrollbar-button {
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-
 /*---------------navbar--------------*/
 
 #nav{
