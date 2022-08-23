@@ -128,10 +128,11 @@ a:hover{
   z-index: 100;
   overflow: hidden;
   outline: 1px solid black;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
 .navbar{
-  background-color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -170,9 +171,8 @@ a:hover{
 
 #banner {
   background-color: white;
-  padding: 50px 25px 50px 25px;
+  padding: 50px 25px 25px 25px;
   justify-content: center;
-  outline: 1px solid black;
 }
 
 
@@ -180,6 +180,11 @@ a:hover{
   font-size: 32px;
 }
 
+hr{
+  border: 0;
+  border-top: 1px solid black;
+  opacity: 1;
+}
 
 /*---------------project--------------*/
 
@@ -256,8 +261,7 @@ a:hover{
 
 #aboutme{
   background-color: white;
-  padding: 50px 25px 50px 25px;
-  outline: 1px solid black;
+  padding: 50px 25px 25px 25px;
 }
 
 .bio{
