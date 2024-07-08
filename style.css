@@ -1,19 +1,49 @@
+
 *{
   margin: 0;
   padding: 0;
-  font-family: 'Fivo Sans Modern Regular';
-  cursor: url('images/bullet.svg'), auto;
+  font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
 }
 
 a{
-  text-decoration: underline;
-  color: black;
+  text-decoration: none;
   cursor: pointer;
+  color: inherit;
 }
 
 a:hover{
+  color: inherit;
+}
+
+button{
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+b{
+  font-weight: 500;
   color: black;
-  text-decoration: underline;
+  font-size: 16px;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  line-height: 1.1em;
+}
+
+li:hover{
+  color: orange;
+}
+
+.small{
+  font-size: 16px;
 }
 
 .row {
@@ -49,49 +79,7 @@ a:hover{
 
 /*---------------font-section--------------*/
 
-
-@font-face {
-  font-family: 'Fivo Sans Modern Regular';
-  src: url('font/FivoSansModern-Regular.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fivo Sans Modern Medium';
-  src: url('font/FivoSansModern-Medium.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fivo Sans Modern Bold';
-  src: url('font/FivoSansModern-Bold.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Fivo Sans Modern Heavy';
-  src: url('font/FivoSansModern-Heavy.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-
-@font-face {
-  font-family: 'Poppins SemiBold';
-  src: url('font/Poppins-SemiBold.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SpaceMono Regular';
-  src: url('font/SpaceMono-Regular.otf') format('woff2');
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro');
 
 /*---------------scroller-section--------------*/
 
@@ -123,13 +111,14 @@ a:hover{
 /*---------------navbar--------------*/
 
 #nav{
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 2;
   overflow: hidden;
-  outline: 1px solid black;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  height: auto;
+  width: 100dvw;
+  mix-blend-mode: difference;
+  font-size: 20px;
 }
 
 .navbar{
@@ -142,194 +131,169 @@ a:hover{
   width: 100vw;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-brand{
-  font-family: 'Poppins SemiBold';
-  font-size: 300%;
+  align-items: flex-start;
 }
 
 .aboutme{
-  clear: both;
   display: inline-block;
   justify-content: center;
 }
 
-.asterisco{
-  width: 5vw;
-  text-align: right;
-  cursor: pointer;
-  transition: width 2s, height 2s, transform 2s;
+
+/*---------------carousel--------------*/
+
+#myCarousel{
+ height: 100%;
+ z-index: 1;
 }
 
-.asterisco:hover{
-  transform: rotate(180deg);
+.carousel-inner > .carousel-item {
+  -webkit-transition: 0s ease-in-out left;
+  -moz-transition: 0s ease-in-out left;
+  -o-transition: 0s ease-in-out left;
+  transition: 0s ease-in-out left;
 }
 
-/*---------------banner--------------*/
-
-#banner {
-  background-color: white;
-  padding: 50px 25px 25px 25px;
-  justify-content: center;
-}
-
-
-.claim{
-  font-size: 32px;
-}
-
-hr{
-  border: 0;
-  border-top: 1px solid black;
-  opacity: 1;
-}
-
-/*---------------project--------------*/
-
-#projects {
-  background-color: white;
-  padding: 50px 25px 50px 25px;
-  justify-content: center;
-}
-
-.project{
+.carousel{
   position: relative;
-  height: 90%;
-  width: auto;
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
 
-.project-image{
-  display: block;
-  width: 100%;
+.carousel-inner {
+  position: absolute;
   height: auto;
-  filter: grayscale(100%);
+  width: 100dvw;
+  overflow: hidden;
+  position: sticky;
+  display: flex;
 }
 
-.overlay {
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: white;
-  cursor: pointer;
+.carousel-item{
+  height: 100dvh;
+  width: auto;
 }
 
-.project:hover .overlay{
-  opacity: 1;
+.image-function{
+  height: auto;
+  width: 100dvw;
 }
 
-.project:hover .project-image{
-  filter: none;
-}
-
-.project-text{
-  color: black;
-  font-size: 20px;
-  text-align: center;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-
-/*---------------footer--------------*/
-
-#footer{
-  background-color: white;
-  padding: 15px 25px 0px 25px;
-  outline: 1px solid black;
-  font-size: 18px;
-}
-
-.footer{
-  width: 100vw;
+.description{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  padding-bottom: 10px;
+  width: 50vw;
   display: flex;
   justify-content: space-between;
-  align-items: self-start;
-}
-
-.footer-link{
-  color: black;
-  text-decoration: underline;
-  cursor: pointer;
+  align-items: baseline;
+  mix-blend-mode: difference;
 }
 
 
-/*---------------aboutme--------------*/
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 40%;
+  bottom: 40%;
+  right: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  color: #fff;
+  background: 0 0;
+  border: 0;
+  opacity: 1;
+  transition: none;
+  width: 4rem;
+  mix-blend-mode: difference;
+  }
 
-#aboutme{
+/*---------------overlay--------------*/
+
+#overlay{
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
   background-color: white;
-  padding: 50px 25px 25px 25px;
+  z-index: 10;
+  transition: .5s ease;
+}
+
+
+#text{
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  padding: 20px 20px 0 20px;
+  color: black;
+  line-height: 1.2em;
+  flex-direction: column;
+}
+
+#overlay button{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: black;
+  cursor: pointer;
+  padding: 0px 12px 20px 0;
+}
+
+.info{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  padding: 0 20px 0 20px;
+  width: 50vw;
+  display: flex;
+  justify-content: flex-end;
+  mix-blend-mode: difference;
+}
+
+.info button {
+  font-size: 50px;
+  font-weight: 200;
+  padding-bottom: 0;
+}
+
+/*---------------about--------------*/
+
+#about{
+  padding: 200px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .bio{
-  font-size: 28px;
-  font-family: 'Fivo Sans Modern Regular';
+  color: black;
+  font-size: 20px;
+
 }
 
-
-#cv{
-  background-color: white;
-  padding: 25px 25px 0px 25px;
-}
-
-ul{
-  list-style-type: none;
-}
-
-li{
-  margin-bottom: 40px;
-  margin-top: 20px;
-}
-
-
-/*---------------profile--------------*/
-
-#cover{
-  background-size: 100vw;
-  padding: 50px 0px 50px 0px;
-  background: white;
-}
-
-marquee{
-  font-family: 'SpaceMono Regular';
+.contact{
+  padding-top: 40px;
   font-size: 16px;
 }
 
-#info{
-  padding: 50px 0px 50px 0px;
-  background: #ffffff;
+.contact ul{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
-.specs{
-  font-size: 18px;
+.contact li{
+  color: black;
+  font-size: 16px;
 }
 
-.sub{
-  font-family: 'Fivo Sans Modern Regular';
-  font-size: 20px;
-}
-
-.fact{
-  font-family: 'SpaceMono Regular';
-  font-size: 14px;
-}
-
-#info img{
-  width: 80vw;
-}
-
-#myCarousel{
- width: 100%;
-}
-
-.foto{
-  width: 70%;
-  margin: auto;
-  display: block;
-}
 
 
 

@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" style="font-size: 97.2%;">
-    <title> Giulia Picasso - Visual Designer</title>
-    <link rel="icon" type="image/favicon" href="images/asterisco.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-    rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<head>
+      <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" style="font-size: 97.2%;">
+      <title> Giulia Picasso - Visual Designer</title>
+      <link rel="icon" type="image/favicon" href="images/favicon.svg">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
 
-  </head>
 
 <body>
 
   <section id="nav">
       <nav class="navbar">
           <div class="nav-bar">
-            <a class="navbar-brand" href="index.html"> Giulia Picasso </a>
-            <div class="aboutme">
-              <a href="aboutme.html"><img src="images/asterisco.png" class="asterisco"></a>
+            <a href="index.html"> Giulia Picasso </a>
+            <div class="aboutme"><a href="about.html">About</a></div>
+
+            <div class="description">
+              <ul>
+                <li><a class="small" href="index.html"> 2024 &nbsp &nbsp Codex folklore </a></li>
+                <li><a class="small" href="photography.html"> 2023 &nbsp &nbsp Photography </a></li>
+                <li><a class="small" href="koi.html"> 2023 &nbsp &nbsp Life of koi </a></li>
+                <li><a class="small" href="anumani.html"> 2021 &nbsp &nbsp Anumani </a></li>
+              </ul>
             </div>
           </div>
+
       </nav>
-
   </section>
 
 
-  <section id="banner">
-      <div class="container">
-        <div class="row">
-              <p class="claim">Ciao! I'm Giulia - and also Zoia. <br> I'm a 23-year-old designer living in Milan. Here below ↓ you can find my design projects. I mainly focus on storytelling, illustrations and animation, as I like to tell stories about the world ☼ that surrounds me.</p>
-        </div>
+<div>
+  <div class="info">
+    <button onclick="on()"> + </button>
+  </div>
+
+  <div id="overlay">
+      <div id="text">
+        2024
+        <br>
+        <b>Codex folklore</b>
+        <br><br><br><br><br>
+          Anime is, allegedly, the medium that best represents Japanese society, culture, history and
+          desires. It can be considered a “mirror” able to reflect the transformations and beliefs of
+          the society in which it develops.
+          This book gathers the reflections, analysis and observations
+          collected during the research for my Master’s thesis in conclusion of my degree in Communication
+          design.
+         <br>
+         <br>
+         <a href="https://codexfolklore.com/" target=”_blank” style="font-size: 16px; text-decoration: underline"> Website </a>
       </div>
+        <button onclick="off()"> <img src="images/x.svg"> </button>
+  </div>
 
-  </section>
-
-    <hr>
-
-  <section id="projects">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-sm" data-aos="fade-up" data-aos-duration="200">
-
-           <div class="project">
-             <a href="anumani.html"><img src="images/anumani_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="anumani.html"><p>ANUMANI</p></a>
-             </div>
-           </div>
+</div>
 
 
-           <div class="project">
-             <a href="libreria.html"><img src="images/libreria_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="libreria.html"><p>LIBRERIA BOCCA</p></a>
-             </div>
-           </div>
-
-           <div class="project">
-             <a href="bfactory.html"> <img src="images/bfactory_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="bfactory.html"><p>BFACTORY</p></a>
-             </div>
-           </div>
-
-         </div>
-
-         <div class="col-sm" data-aos="fade-up" data-aos-duration="400">
-
-           <div class="project">
-             <a href="doveva.html"><img src="images/doveva_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="doveva.html"><p>DOVE VA TUTTA 'STA GENTE?</p></a>
-             </div>
-           </div>
-
-           <div class="project">
-             <a href="urlomuto.html"><img src="images/urlo_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="urlomuto.html"><p>URLO MUTO DELLA TERRA</p></a>
-             </div>
-           </div>
+  <div id="myCarousel" class="carousel slide" data-interval="false" data-ride="carousel" data-pause="hover">
 
 
-         </div>
-         <div class="col-sm" data-aos="fade-up" data-aos-duration="200">
+                <div class="carousel-inner">
 
-           <div class="project">
-            <a href="internoverde.html"> <img src="images/interno.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="internoverde.html"><p>INTERNOVERDE</p></a>
-             </div>
-           </div>
+                  <div class="carousel-item active">
+                    <img class="image-function" src="images/tesi4.png">
+                  </div>
 
-           <div class="project">
-            <a href="photography.html"> <img src="images/ora.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="photography.html"><p>PHOTOGRAPHY</p></a>
-             </div>
-           </div>
+                  <div class="carousel-item">
+                    <img class="image-function" src="images/tesi1.png">
+                  </div>
 
-           <div class="project">
-             <a href="drawings.html"><img src="images/disegni_cover.png" class="project-image"></a>
-             <div class="overlay">
-               <a class="project-text" href="drawings.html" ><p>DRAWINGS</p></a>
-             </div>
-           </div>
+                  <div class="carousel-item">
+                    <img class="image-function" src="images/tesi6.png">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="image-function"src="images/tesi7.png">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="image-function"src="images/tesi2.png">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="image-function" src="images/tesi8.png">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="image-function" src="images/20240330_110240-Edit 1.png">
+                  </div>
+
+                  <div class="carousel-item">
+                    <img class="image-function" src="images/tesi5.png">
+                  </div>
+
+              </div>
 
 
-         </div>
-
-       </div>
-      </div>
-
-  </section>
-
-
-
-
-
-    <section id="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="footer">
-
-            <div class="col-6">
-              <p> © GIULIA PICASSO </p>
+              <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span><img src="images/arrow-sx.svg" style="cursor: pointer; padding-left: 20px;"></span>
+              </a>
+              <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span><img src="images/arrow-dx.svg" style="cursor: pointer; padding-right: 20px;"></span>
+              </a>
             </div>
 
-            <div class="col-6" style="text-align: right">
-              <a class="footer-link" href="mailto:giulia.picasso99@gmail.com?subject=Hello">Email</a>
-              <a class="footer-link" href="https://www.instagram.com/giuliapicass/" target=”_blank>Instagram</a>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
 
 
 
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-     AOS.init();
-    </script>
-    <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+</script>
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 
   </body>
 
