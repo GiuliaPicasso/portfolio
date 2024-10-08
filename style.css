@@ -269,7 +269,7 @@ li:hover{
 #about{
   padding: 200px 20px 0px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .bio{
@@ -294,6 +294,48 @@ li:hover{
   font-size: 16px;
 }
 
+
+/*---------------scroll animation--------------*/
+
+.scroll {
+    margin: auto;
+    width: 1900px;
+    overflow: visible;
+}
+
+.scroll ul {
+    padding: 0;
+    display: flex;
+    border-radius: 10px;
+    animation: scroll 50s infinite linear;
+}
+
+.scroll li {
+    margin: 0 10px;
+    list-style: none;
+    position: relative;
+    border-radius: 10px;
+}
+
+.scroll img {
+    height: auto;
+    width: 300px;
+    transition: 0.2s;
+    position: relative;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+
+@keyframes scroll {
+    from {
+        margin-left: 0%
+    }
+
+    to {
+        margin-left: -100%
+    }
+}
 
 
 
